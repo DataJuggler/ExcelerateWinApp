@@ -21,11 +21,11 @@ Clone this project from GitHub https://github.com/DataJuggler/ExcelerateWinApp
 https://excelerate.datajuggler.com Download the MemberData.xlsx from the above site to see an example.
 Use ExcelerateWinApp.Objects for the namespace or rename this project to your liking
  
-2. Copy the objects into the Objects folder of ExcelerateWinApp
+2. Copy the classes created into the Objects folder of ExcelerateWinApp
 
 3. Load Excel Worksheet(s) - Example is include in UpdateButton_Click event
 	
-	// load your object(s)
+    // load your object(s)
     string workbookPath = FileSelector.Text;
 
     // Example WorksheetInfo objects           
@@ -33,23 +33,23 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
     info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
     info.Path = workbookPath;	
 
-	// Set your SheetName
+    // Set your SheetName
     info.SheetName = "Address";
 
-	// Example WorksheetInfo objects           
+    // Example WorksheetInfo objects           
     WorksheetInfo info2 = new WorksheetInfo();
     info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
     info2.Path = workbookPath;	
 
-	// Example load Worksheet
+    // Example load Worksheet
     Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
 	Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
 
 4. Load your list of objects
  
     // Examples loading the Address sheet from MemberData.xlsx
-	List<Address> addresses = Address.Load(addressWorksheet);
-	List<States> states = States.Load(statesWorksheet);
+    List<Address> addresses = Address.Load(addressWorksheet);
+    List<States> states = States.Load(statesWorksheet);
 
 5. Perform updates on your List of objects
 
@@ -66,7 +66,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        public void FixStateNames(ref List<Address> addresses, List<States> states)
        {
           // verify both lists exists and have at least one item
-		  if (ListHelper.HasOneOrMoreItems(addresses, states))
+	  if (ListHelper.HasOneOrMoreItems(addresses, states))
           {
               // Iterate the collection of Address objects
               foreach (Address address in addresses)
@@ -108,15 +108,15 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
 7. (Optional) Leave a Star on DataJuggler.Excelerate, Blazor Excelerate or this project on GitHub
 
     DataJuggler.Excelerate
-	https://github.com/DataJuggler/Excelerate
+    https://github.com/DataJuggler/Excelerate
 
     Blazor Excelerate
-	https://github.com/DataJuggler/Blazor.Excelerate
+    https://github.com/DataJuggler/Blazor.Excelerate
 	
     Excelerate Win App
-	https://github.com/DataJuggler/ExcelerateWinApp
+    https://github.com/DataJuggler/ExcelerateWinApp
 
-8. (Optional) Subscribe to my YouTube channel
+9. (Optional) Subscribe to my YouTube channel
     https://youtube.com/DataJuggler
 
 # News
