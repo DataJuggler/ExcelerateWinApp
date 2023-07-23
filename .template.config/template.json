@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Data Juggler",
+  "classifications": [ "ClassLibrary", "DataJuggler.ExcelerateWinApp", "C#11" ],
+  "identity": "DataJuggler.ExcelerateWinApp",
+  "name": "DataJuggler.ExcelerateWinApp",
+  "shortName": "DataJuggler.ExcelerateWinApp",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
