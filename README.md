@@ -29,7 +29,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        string workbookPath = FileSelector.Text;
 
        // Example WorksheetInfo objects           
-       WorksheetInfo info = new WorksheetInfo();<br>
+       WorksheetInfo info = new WorksheetInfo();
        info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
        info.Path = workbookPath;	
 
@@ -37,7 +37,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        info.SheetName = "Address";
 
        // Example WorksheetInfo objects           
-       WorksheetInfo info2 = new WorksheetInfo();<br>
+       WorksheetInfo info2 = new WorksheetInfo();
        info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
        info2.Path = workbookPath;
 
