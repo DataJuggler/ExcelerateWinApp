@@ -18,8 +18,12 @@ Clone this project from GitHub https://github.com/DataJuggler/ExcelerateWinApp
 
 # Setup Instructions
 
-1. Create one or more classes from Excel Header Rows at Blazor Excelerate
-https://excelerate.datajuggler.com Download the MemberData.xlsx from the above site to see an example.
+1. Create one or more classes from Excel Header Rows at<br><br>
+
+Blazor Excelerate<br>
+https://excelerate.datajuggler.com<br>
+
+Download the MemberData.xlsx from the above site to see an example.
 Use ExcelerateWinApp.Objects for the namespace or rename this project to your liking
  
 2. Copy the classes created into the Objects folder of ExcelerateWinApp
