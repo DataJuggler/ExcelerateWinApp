@@ -23,7 +23,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
  
 2. Copy the classes created into the Objects folder of ExcelerateWinApp
 
-3. Load Excel Worksheet(s) - Example is include in UpdateButton_Click event
+3. Load Excel Worksheet(s) - Example is included in the UpdateButton_Click event
 	
     // load your object(s)<br>
     string workbookPath = FileSelector.Text;
@@ -58,8 +58,9 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
 
    For this example, I inserted a column StateName into the Address sheet in Excel and
    added a few state names manually. You must add a few entries so the data type can be
-   attempted to be determined. Then code generated Address and States objects using
-   Blazor Excelerate https://excelerate.datajuggler.com
+   attempted to be determined. Then I code generated Address and States classes using
+   Blazor Excelerate<br>
+   https://excelerate.datajuggler.com
 
    This method set the Address.StateName for each row by looking up the State Name by StateId
 	
