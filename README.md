@@ -30,7 +30,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
 
        // Example WorksheetInfo objects           
        WorksheetInfo info = new WorksheetInfo();
-       info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
+       info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
        info.Path = workbookPath;	
 
        // Set your SheetName<br>
@@ -38,10 +38,10 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
 
        // Example WorksheetInfo objects           
        WorksheetInfo info2 = new WorksheetInfo();
-       info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
+       info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
        info2.Path = workbookPath;
 
-       // Set the SheetName for info2<br>
+       // Set the SheetName for info2
        info2.SheetName = 'States";
 
        // Example load Worksheets<br>
@@ -51,7 +51,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
 5. Load your list of objects
  
         // Examples loading the Address and States sheet from MemberData.xlsx
-        List<Address> addresses = Address.Load(addressWorksheet);<br>
+        List<Address> addresses = Address.Load(addressWorksheet);
         List<States> states = States.Load(statesWorksheet);
 
 6. Perform updates on your List of objects
