@@ -25,34 +25,34 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
 
 3. Load Excel Worksheet(s) - Example is included in the UpdateButton_Click event
 	
-    // load your object(s)
-    string workbookPath = FileSelector.Text;
+        // load your object(s)
+        string workbookPath = FileSelector.Text;
 
-    // Example WorksheetInfo objects           
-    WorksheetInfo info = new WorksheetInfo();<br>
-    info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
-    info.Path = workbookPath;	
+        // Example WorksheetInfo objects           
+        WorksheetInfo info = new WorksheetInfo();<br>
+        info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
+        info.Path = workbookPath;	
 
     // Set your SheetName<br>
     info.SheetName = "Address";
 
-    // Example WorksheetInfo objects           
-    WorksheetInfo info2 = new WorksheetInfo();<br>
-    info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
-    info2.Path = workbookPath;
+       // Example WorksheetInfo objects           
+       WorksheetInfo info2 = new WorksheetInfo();<br>
+       info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
+       info2.Path = workbookPath;
 
-    // Set the SheetName for info2<br>
-    info2.SheetName = 'States";
+       // Set the SheetName for info2<br>
+       info2.SheetName = 'States";
 
-    // Example load Worksheets<br>
-    Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);<br>
-    Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
+       // Example load Worksheets<br>
+       Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
+       Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
 
 5. Load your list of objects
  
-    // Examples loading the Address and States sheet from MemberData.xlsx
-    List<Address> addresses = Address.Load(addressWorksheet);<br>
-    List<States> states = States.Load(statesWorksheet);
+        // Examples loading the Address and States sheet from MemberData.xlsx
+        List<Address> addresses = Address.Load(addressWorksheet);<br>
+        List<States> states = States.Load(statesWorksheet);
 
 6. Perform updates on your List of objects
 
