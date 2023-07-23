@@ -50,8 +50,8 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
 
 5. Load your list of objects
  
-    // Examples loading the Address sheet from MemberData.xlsx
-    List<Address> addresses = Address.Load(addressWorksheet);
+    // Examples loading the Address and States sheet from MemberData.xlsx
+    List<Address> addresses = Address.Load(addressWorksheet);<br>
     List<States> states = States.Load(statesWorksheet);
 
 6. Perform updates on your List of objects
