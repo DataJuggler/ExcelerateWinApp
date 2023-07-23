@@ -28,7 +28,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackAsTool>False</PackAsTool>
     <PackageReadmeFile>templates\README.md</PackageReadmeFile>
-    <PackageIcon>templates\wwwroot\Images\FolderIcon.png</PackageIcon>
+    <PackageIcon></PackageIcon>
     <OutputType>Library</OutputType>	  
   </PropertyGroup>
   <ItemGroup>
@@ -55,7 +55,7 @@
 		<Pack>True</Pack>
 		<PackagePath>\</PackagePath>
 	</None>
-	<None Update="templates\wwwroot\Images\FolderIcon.png">
+	<None Update="templates\ExcelerateLogoSmallWhite.png">
 	  <Pack>True</Pack>
 	  <PackagePath>\</PackagePath>
 	</None>

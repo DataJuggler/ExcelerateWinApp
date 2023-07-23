@@ -51,8 +51,6 @@ namespace ExcelerateWinApp
         }
         #endregion
 
-        
-
         #region UpdateButton_Click(object sender, EventArgs e)
         /// <summary>
         /// event is fired when the 'UpdateButton' is clicked.
@@ -79,6 +77,9 @@ namespace ExcelerateWinApp
              // If the worksheet object exist
             if (NullHelper.Exists(worksheet))
             {
+                // load your objects (example)
+                // List<Address> addresses = Address.Load(worksheet);
+
                 // perform your updates 
 
                 // to save back to Excel
