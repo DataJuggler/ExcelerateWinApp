@@ -25,7 +25,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
 
 3. Load Excel Worksheet(s) - Example is included in the UpdateButton_Click event
 	
-    // load your object(s)<br>
+    // load your object(s)
     string workbookPath = FileSelector.Text;
 
     // Example WorksheetInfo objects           
