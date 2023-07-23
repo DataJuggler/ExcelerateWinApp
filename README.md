@@ -33,7 +33,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
        info.Path = workbookPath;	
 
-       // Set your SheetName<br>
+       // Set your SheetName
        info.SheetName = "Address";
 
        // Example WorksheetInfo objects           
@@ -44,7 +44,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        // Set the SheetName for info2
        info2.SheetName = 'States";
 
-       // Example load Worksheets<br>
+       // Example load Worksheets
        Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
        Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
 
