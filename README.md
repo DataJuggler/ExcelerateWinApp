@@ -37,8 +37,8 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
     info.SheetName = "Address";
 
     // Example WorksheetInfo objects           
-    WorksheetInfo info2 = new WorksheetInfo();
-    info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
+    WorksheetInfo info2 = new WorksheetInfo();<br>
+    info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
     info2.Path = workbookPath;	
 
     // Example load Worksheet
