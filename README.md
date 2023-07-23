@@ -1,6 +1,7 @@
 # DataJuggler.ExcelerateWinApp
-ExcelerateWinApp is a WinForms app designed to make it easy to load and save Excel objects that were created using 
-Blazor Excelerate https://excelerate.datajuggler.com 
+ExcelerateWinApp is a WinForms app designed to make it easy to load and save Excel objects that were created using<br><br>
+Blazor Excelerate<br>
+https://excelerate.datajuggler.com<br>
 Code Generate C# Classes From Excel Header Rows
 
 # Instructions to run this project:
@@ -17,46 +18,54 @@ Clone this project from GitHub https://github.com/DataJuggler/ExcelerateWinApp
 
 # Setup Instructions
 
-1. Create one or more classes from Excel Header Rows at Blazor Excelerate
-https://excelerate.datajuggler.com Download the MemberData.xlsx from the above site to see an example.
+1. Create one or more classes from Excel Header Rows at<br><br>
+
+Blazor Excelerate<br>
+https://excelerate.datajuggler.com<br>
+
+Download the MemberData.xlsx from the above site to see an example.
 Use ExcelerateWinApp.Objects for the namespace or rename this project to your liking
  
-2. Copy the objects into the Objects folder of ExcelerateWinApp
+2. Copy the classes created into the Objects folder of ExcelerateWinApp
 
-3. Load Excel Worksheet(s) - Example is include in UpdateButton_Click event
+3. Load Excel Worksheet(s) - Example is included in the UpdateButton_Click event
 	
-	// load your object(s)
-    string workbookPath = FileSelector.Text;
+       // load your object(s)
+       string workbookPath = FileSelector.Text;
 
-    // Example WorksheetInfo objects           
-    WorksheetInfo info = new WorksheetInfo();
-    info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
-    info.Path = workbookPath;	
+       // Example WorksheetInfo objects           
+       WorksheetInfo info = new WorksheetInfo();
+       info.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
+       info.Path = workbookPath;	
 
-	// Set your SheetName
-    info.SheetName = "Address";
+       // Set your SheetName
+       info.SheetName = "Address";
 
-	// Example WorksheetInfo objects           
-    WorksheetInfo info2 = new WorksheetInfo();
-    info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
-    info2.Path = workbookPath;	
+       // Example WorksheetInfo objects           
+       WorksheetInfo info2 = new WorksheetInfo();
+       info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;
+       info2.Path = workbookPath;
 
-	// Example load Worksheet
-    Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
-	Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
+       // Set the SheetName for info2
+       info2.SheetName = 'States";
 
-4. Load your list of objects
+       // Example load Worksheets
+       Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
+       Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
+
+5. Load your list of objects
  
-    // Examples loading the Address sheet from MemberData.xlsx
-	List<Address> addresses = Address.Load(addressWorksheet);
-	List<States> states = States.Load(statesWorksheet);
+        // Examples loading the Address and States sheet from MemberData.xlsx
+        List<Address> addresses = Address.Load(addressWorksheet);
+        List<States> states = States.Load(statesWorksheet);
 
-5. Perform updates on your List of objects
+6. Perform updates on your List of objects
 
    For this example, I inserted a column StateName into the Address sheet in Excel and
    added a few state names manually. You must add a few entries so the data type can be
-   attempted to be determined. Then code generated Address and States objects using
-   Blazor Excelerate https://excelerate.datajuggler.com
+   attempted to be determined. Then I code generated Address and States classes using
+   Blazor Excelerate<br>
+   https://excelerate.datajuggler.com
 
    This method set the Address.StateName for each row by looking up the State Name by StateId
 	
@@ -66,7 +75,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        public void FixStateNames(ref List<Address> addresses, List<States> states)
        {
           // verify both lists exists and have at least one item
-		  if (ListHelper.HasOneOrMoreItems(addresses, states))
+	  if (ListHelper.HasOneOrMoreItems(addresses, states))
           {
               // Iterate the collection of Address objects
               foreach (Address address in addresses)
@@ -90,7 +99,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
            }
         }
 	
-6. Save your worksheet back to Excel
+7. Save your worksheet back to Excel
 
        // resetup the graph                    
        Graph.Maximum = addresses.Count;
@@ -105,18 +114,18 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        // Now save the worksheet
        SaveWorksheetResponse response = ExcelHelper.SaveWorksheet(excelerateObjectList, addressWorksheet, info, SaveWorksheetCallback, 500);
 
-7. (Optional) Leave a Star on DataJuggler.Excelerate, Blazor Excelerate or this project on GitHub
+8. (Optional) Leave a Star on DataJuggler.Excelerate, Blazor Excelerate or this project on GitHub
 
     DataJuggler.Excelerate
-	https://github.com/DataJuggler/Excelerate
+    https://github.com/DataJuggler/Excelerate
 
     Blazor Excelerate
-	https://github.com/DataJuggler/Blazor.Excelerate
+    https://github.com/DataJuggler/Blazor.Excelerate
 	
     Excelerate Win App
-	https://github.com/DataJuggler/ExcelerateWinApp
+    https://github.com/DataJuggler/ExcelerateWinApp
 
-8. (Optional) Subscribe to my YouTube channel
+9. (Optional) Subscribe to my YouTube channel
     https://youtube.com/DataJuggler
 
 # News
