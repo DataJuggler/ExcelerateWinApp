@@ -39,19 +39,22 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
     // Example WorksheetInfo objects           
     WorksheetInfo info2 = new WorksheetInfo();<br>
     info2.LoadColumnOptions = LoadColumnOptionsEnum.LoadAllColumnsExceptExcluded;<br>
-    info2.Path = workbookPath;	
+    info2.Path = workbookPath;
+
+    // Set the SheetName for info2<br>
+    info2.SheetName = 'States";
 
     // Example load Worksheet
     Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
-	Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
+    Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
 
-4. Load your list of objects
+5. Load your list of objects
  
     // Examples loading the Address sheet from MemberData.xlsx
     List<Address> addresses = Address.Load(addressWorksheet);
     List<States> states = States.Load(statesWorksheet);
 
-5. Perform updates on your List of objects
+6. Perform updates on your List of objects
 
    For this example, I inserted a column StateName into the Address sheet in Excel and
    added a few state names manually. You must add a few entries so the data type can be
@@ -90,7 +93,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
            }
         }
 	
-6. Save your worksheet back to Excel
+7. Save your worksheet back to Excel
 
        // resetup the graph                    
        Graph.Maximum = addresses.Count;
@@ -105,7 +108,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        // Now save the worksheet
        SaveWorksheetResponse response = ExcelHelper.SaveWorksheet(excelerateObjectList, addressWorksheet, info, SaveWorksheetCallback, 500);
 
-7. (Optional) Leave a Star on DataJuggler.Excelerate, Blazor Excelerate or this project on GitHub
+8. (Optional) Leave a Star on DataJuggler.Excelerate, Blazor Excelerate or this project on GitHub
 
     DataJuggler.Excelerate
     https://github.com/DataJuggler/Excelerate
