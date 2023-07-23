@@ -45,7 +45,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
     info2.SheetName = 'States";
 
     // Example load Worksheets<br>
-    Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
+    Worksheet addressWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);<br>
     Worksheet statesWorksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info2);
 
 5. Load your list of objects
