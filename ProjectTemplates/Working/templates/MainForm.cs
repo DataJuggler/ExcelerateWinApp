@@ -67,14 +67,14 @@ namespace ExcelerateWinApp
 
             // Change to your SheetName
             info.SheetName = "";
-            
+
             // local
             int itemNumber = 0;
 
             // Example load Worksheet
             Worksheet worksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
 
-             // If the worksheet object exist
+            // If the worksheet object exist
             if (NullHelper.Exists(worksheet))
             {
                 // load your objects (example)
@@ -99,41 +99,41 @@ namespace ExcelerateWinApp
         #endregion
 
         #region Methods
-            
-            #region SaveWorksheetCallback(SaveWorksheetResponse resonse)
-            /// <summary>
-            /// Save Worksheet Callback
-            /// </summary>
-            public void SaveWorksheetCallback(SaveWorksheetResponse response)
-            {
-                // If the response object exists
-                if (NullHelper.Exists(response))
-                {
-                    // Update the graph
-                    Graph.Value = response.RowsSaved;
-                    StatusLabel.Text = "Saved " + response.CurrentRowNumber + " of " + response.TotalRows;
 
-                    // update the UI
-                    Refresh();
-                    Application.DoEvents();
-                }
-            }
-            #endregion
-
-            #region SetupGraph()
-            /// <summary>
-            /// Setup Graph
-            /// </summary>
-            public void SetupGraph(string statusText, int graphMaxium, bool showGraph)
+        #region SaveWorksheetCallback(SaveWorksheetResponse resonse)
+        /// <summary>
+        /// Save Worksheet Callback
+        /// </summary>
+        public void SaveWorksheetCallback(SaveWorksheetResponse response)
+        {
+            // If the response object exists
+            if (NullHelper.Exists(response))
             {
-                // Show or hide
-                StatusLabel.Text = statusText;
-                Graph.Maximum = graphMaxium;
-                Graph.Visible = showGraph;
-                Graph.Value = 0;
+                // Update the graph
+                Graph.Value = response.RowsSaved;
+                StatusLabel.Text = "Saved " + response.CurrentRowNumber + " of " + response.TotalRows;
+
+                // update the UI
+                Refresh();
+                Application.DoEvents();
             }
-            #endregion
-            
+        }
+        #endregion
+
+        #region SetupGraph()
+        /// <summary>
+        /// Setup Graph
+        /// </summary>
+        public void SetupGraph(string statusText, int graphMaxium, bool showGraph)
+        {
+            // Show or hide
+            StatusLabel.Text = statusText;
+            Graph.Maximum = graphMaxium;
+            Graph.Visible = showGraph;
+            Graph.Value = 0;
+        }
+        #endregion
+
         #endregion
 
         #region Properties

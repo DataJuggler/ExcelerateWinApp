@@ -47,7 +47,7 @@
             FileSelector.DisabledLabelColor = Color.Empty;
             FileSelector.Editable = true;
             FileSelector.EnabledLabelColor = Color.Empty;
-            FileSelector.Filter = "Excel Files(.xlsx)|*.xlsx| Excel Files(.xlsx)|*.xlsx| Excel";
+            FileSelector.Filter = "Excel Files|*.xlsx;";
             FileSelector.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             FileSelector.HideBrowseButton = false;
             FileSelector.LabelBottomMargin = 0;

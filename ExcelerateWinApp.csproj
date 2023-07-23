@@ -12,7 +12,8 @@
     <RepositoryUrl>https://github.com/DataJuggler/ExcelerateWinApp.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/DataJuggler/ExcelerateWinApp</PackageProjectUrl>
     <RepositoryType>Git</RepositoryType>
-    <PackageTags>C#;Excel;</PackageTags>    
+    <PackageTags>C#;Excel;</PackageTags>
+    <Version>1.0.1</Version>    
   </PropertyGroup>
 
   <ItemGroup>
