@@ -1,6 +1,7 @@
 # DataJuggler.ExcelerateWinApp
 ExcelerateWinApp is a WinForms app designed to make it easy to load and save Excel objects that were created using 
-Blazor Excelerate https://excelerate.datajuggler.com 
+Blazor Excelerate<br>
+https://excelerate.datajuggler.com 
 Code Generate C# Classes From Excel Header Rows
 
 # Instructions to run this project:
