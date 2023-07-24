@@ -23,7 +23,7 @@ Clone this project from GitHub https://github.com/DataJuggler/ExcelerateWinApp
 Blazor Excelerate<br>
 https://excelerate.datajuggler.com<br>
 
-Download the MemberData.xlsx from the above site to see an example.
+Download the file MemberData.xlsx from the above site to see an example.
 Use ExcelerateWinApp.Objects for the namespace or rename this project to your liking
  
 2. Copy the classes created into the Objects folder of ExcelerateWinApp
