@@ -69,9 +69,6 @@ namespace ExcelerateWinApp
             // Change to your SheetName
             info.SheetName = "";
 
-            // local
-            int itemNumber = 0;
-
             // Example load Worksheet
             Worksheet worksheet = ExcelDataLoader.LoadWorksheet(workbookPath, info);
 
@@ -129,6 +126,7 @@ namespace ExcelerateWinApp
         {
             // Show or hide
             StatusLabel.Text = statusText;
+            StatusLabel.Visible = showGraph;
             Graph.Maximum = graphMaxium;
             Graph.Visible = showGraph;
             Graph.Value = 0;
