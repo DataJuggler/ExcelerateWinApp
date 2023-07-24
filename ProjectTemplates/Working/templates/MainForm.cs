@@ -6,6 +6,7 @@ using DataJuggler.Win.Controls;
 using DataJuggler.Win.Controls.Interfaces;
 using DataJuggler.Excelerate;
 using DataJuggler.UltimateHelper;
+using ExcelerateWinApp.Objects;
 using DataJuggler.Excelerate.Delegates;
 using DataJuggler.Excelerate.Interfaces;
 

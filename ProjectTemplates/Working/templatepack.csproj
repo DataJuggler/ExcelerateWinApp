@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>    
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageVersion>1.0.2</PackageVersion>
     <PackageId>DataJuggler.ExcelerateWinApp</PackageId>
     <Title>DataJuggler.ExcelerateWinApp</Title>
     <Authors>Data Juggler</Authors>
@@ -14,14 +14,16 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Product>DataJuggler.ExcelerateWinApp</Product>
     <ApplicationIcon></ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageProjectUrl>https://github.com/DataJuggler/BlazorGallery</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DataJuggler/BlazorGallery.git</RepositoryUrl>
     <RepositoryType>Git/GitHub</RepositoryType>
-    <PackageReleaseNotes>		
+    <PackageReleaseNotes>
+		7.24.2023: The using statement for ExcelerateWinApp.Objects was missing.
+		
 		7.23.2023: This is the first release of this project.
 	</PackageReleaseNotes>
     <Nullable>disable</Nullable>
