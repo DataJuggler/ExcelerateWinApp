@@ -75,7 +75,7 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
        public void FixStateNames(ref List<Address> addresses, List<States> states)
        {
            // verify both lists exists and have at least one item
-	   if (ListHelper.HasOneOrMoreItems(addresses, states))
+           if (ListHelper.HasOneOrMoreItems(addresses, states))
            {
               // Iterate the collection of Address objects
               foreach (Address address in addresses)
