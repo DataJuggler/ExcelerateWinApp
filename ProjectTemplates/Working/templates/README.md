@@ -1,6 +1,15 @@
+
+7.24.2023: New Video
+
+The Best C# Excel Library In The Galaxy
+https://youtu.be/uWXiz52cqlg
+
 # DataJuggler.ExcelerateWinApp
-ExcelerateWinApp is a WinForms app designed to make it easy to load and save Excel objects that were created using<br><br>
+ExcelerateWinApp is a WinForms app designed to make it easy to load and save Excel objects 
+that were created using<br><br>
+
 Blazor Excelerate<br>
+
 https://excelerate.datajuggler.com<br>
 Code Generate C# Classes From Excel Header Rows
 
@@ -129,6 +138,16 @@ Use ExcelerateWinApp.Objects for the namespace or rename this project to your li
     https://youtube.com/DataJuggler
 
 # News
+
+1.0.5:
+7.24.203: Some bug fixes were found when I made this video. The project seems pretty stable.
+
+7.24.2023: New Video
+
+The Best C# Excel Library In The Galaxy
+https://youtu.be/uWXiz52cqlg
+
+Also, NuGet package DataJuggler.Excelerate was updated with links to this project.
 
 1.0.0
 7.23.2023: First Working Version Released
