@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>    
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0.5</PackageVersion>
+    <PackageVersion>1.0.7</PackageVersion>
     <PackageId>DataJuggler.ExcelerateWinApp</PackageId>
     <Title>DataJuggler.ExcelerateWinApp</Title>
     <Authors>Data Juggler</Authors>
@@ -14,7 +14,7 @@
     <IncludeContentInPack>true</IncludeContentInPack>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <ContentTargetFolders>content</ContentTargetFolders>
-    <Version>1.0.5</Version>
+    <Version>1.0.7</Version>
     <Product>DataJuggler.ExcelerateWinApp</Product>
     <ApplicationIcon></ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -22,6 +22,9 @@
     <RepositoryUrl>https://github.com/DataJuggler/BlazorGallery.git</RepositoryUrl>
     <RepositoryType>Git/GitHub</RepositoryType>
     <PackageReleaseNotes>
+		8.13.2023: DataJuggler.Excelerate was updated because DataJuggler.UltimateHelper was updated.
+		DataJuggler.Win.Controls was also updated.
+		
 		7.24.2023 B: I posted a new video. Also NuGet package DataJuggler.Excelerate was updated.
 
 		The Best C# Excel Library In The Galaxy
