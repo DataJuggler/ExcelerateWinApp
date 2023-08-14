@@ -1,4 +1,9 @@
 
+8.14.2023 New Video
+
+Create a Stock Predictor With C# and ML.NET Part I
+https://youtu.be/hF8LkvwOXQY
+
 7.24.2023: New Video
 
 The Best C# Excel Library In The Galaxy
