@@ -90,7 +90,7 @@
             // 
             // Graph
             // 
-            Graph.Location = new Point(36, 280);
+            Graph.Location = new Point(36, 292);
             Graph.Name = "Graph";
             Graph.Size = new Size(1016, 23);
             Graph.TabIndex = 2;
@@ -100,7 +100,7 @@
             // 
             StatusLabel.BackColor = Color.Transparent;
             StatusLabel.ForeColor = Color.LemonChiffon;
-            StatusLabel.Location = new Point(37, 235);
+            StatusLabel.Location = new Point(37, 259);
             StatusLabel.Name = "StatusLabel";
             StatusLabel.Size = new Size(1015, 29);
             StatusLabel.TabIndex = 3;
